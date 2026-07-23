@@ -506,6 +506,15 @@ let lastRenderTimestamp = 0;
 const MAX_FPS = 60;
 const FRAME_INTERVAL = 1000 / MAX_FPS;
 
+const clock = new THREE.Clock();
+let t = 0;
+
+const tempVec = new THREE.Vector3();
+const tempVec2 = new THREE.Vector3();
+const tempQuat1 = new THREE.Quaternion();
+const tempQuat2 = new THREE.Quaternion();
+const tempEuler = new THREE.Euler();
+
 function animate(timestamp) {
   requestAnimationFrame(animate);
 
