@@ -19,10 +19,9 @@ const isTouchDevice = window.matchMedia('(hover: none) and (pointer: coarse)').m
 // ─── Renderer ────────────────────────────────────────────────────────────────
 const canvas = document.getElementById('avatar-canvas');
 
-const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true });
-renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
-renderer.shadowMap.enabled      = true;
-renderer.shadowMap.type         = THREE.PCFSoftShadowMap;
+const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true, powerPreference: 'high-performance' });
+renderer.setPixelRatio(Math.min(window.devicePixelRatio, 1.25));
+renderer.shadowMap.enabled      = false;
 renderer.outputColorSpace        = THREE.SRGBColorSpace;
 renderer.localClippingEnabled    = false;
 renderer.clippingPlanes          = [];
@@ -71,7 +70,7 @@ scene.add(new THREE.AmbientLight(0xffffff, 0.6));
 
 const dirLight = new THREE.DirectionalLight(0xffffff, 3);
 dirLight.position.set(3, 6, 5);
-dirLight.castShadow = true;
+dirLight.castShadow = false;
 scene.add(dirLight);
 
 const rimLight = new THREE.PointLight(0x10b981, 8, 10);
@@ -193,8 +192,8 @@ gltfLoader.load('./modelazo-optimized.glb', (gltf) => {
 
   avatarRoot.traverse((node) => {
     if (node.isMesh || node.isSkinnedMesh) {
-      node.castShadow = true;
-      node.receiveShadow = true;
+      node.castShadow = false;
+      node.receiveShadow = false;
       if (node.isSkinnedMesh) node.frustumCulled = false;
 
       // Detect morph targets for blinking
@@ -481,19 +480,43 @@ function positionCameraOnHead() {
   lookTargetRaw.copy(lookTarget);
 }
 
-// ─── Animation loop ───────────────────────────────────────────────────────────
-const clock = new THREE.Clock();
-let t = 0;
+// ─── Visibility & FPS Throttling ──────────────────────────────────────────────
+let isCanvasVisible = true;
+const heroSection = document.getElementById('hero');
 
-// Reusable temporary objects to prevent Garbage Collection Jank
-const tempVec = new THREE.Vector3();
-const tempVec2 = new THREE.Vector3();
-const tempQuat1 = new THREE.Quaternion();
-const tempQuat2 = new THREE.Quaternion();
-const tempEuler = new THREE.Euler();
+if ('IntersectionObserver' in window && heroSection) {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      isCanvasVisible = entry.isIntersecting;
+    });
+  }, { threshold: 0.05 });
+  observer.observe(heroSection);
+}
 
-function animate() {
+document.addEventListener('visibilitychange', () => {
+  if (document.hidden) {
+    isCanvasVisible = false;
+  } else if (heroSection) {
+    const rect = heroSection.getBoundingClientRect();
+    isCanvasVisible = rect.bottom > 0 && rect.top < window.innerHeight;
+  }
+});
+
+let lastRenderTimestamp = 0;
+const MAX_FPS = 60;
+const FRAME_INTERVAL = 1000 / MAX_FPS;
+
+function animate(timestamp) {
   requestAnimationFrame(animate);
+
+  if (!isCanvasVisible) return;
+
+  if (timestamp) {
+    const elapsed = timestamp - lastRenderTimestamp;
+    if (elapsed < FRAME_INTERVAL - 1) return;
+    lastRenderTimestamp = timestamp - (elapsed % FRAME_INTERVAL);
+  }
+
   const dt = Math.min(clock.getDelta(), 0.05);
   t += dt;
 
@@ -716,6 +739,8 @@ const mInterval = 1000 / mFPS;
 
 function animateMatrix(timestamp) {
   requestAnimationFrame(animateMatrix);
+
+  if (!isCanvasVisible) return;
 
   if (!lastMTime) lastMTime = timestamp;
   const elapsed = timestamp - lastMTime;
