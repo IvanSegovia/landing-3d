@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="InsEgo — Hago páginas web y aplicaciones móviles que traen dinero. El resto es decorado y humo." />
+  <title>InsEgo — Hago webs y apps que traen dinero.</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800;900&family=Space+Grotesk:wght@400;500&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
+
+  <script type="importmap">
+    {
+      "imports": {
+        "three":          "https://cdn.jsdelivr.net/npm/three@0.164.1/build/three.module.js",
+        "three/addons/":  "https://cdn.jsdelivr.net/npm/three@0.164.1/examples/jsm/"
+      }
+    }
+  </script>
+
+  <link rel="stylesheet" href="style.css?v=7" />
+</head>
+<body>
+
+  <!-- ═══ PRELOADER ══════════════════════════════════════════════════════ -->
+  <div id="preloader" class="preloader">
+    <div class="preloader__content">
+      <div class="preloader__text">InsEgo</div>
+    </div>
+  </div>
+
+  <!-- ═══ FIXED BACKGROUND CANVAS (3D head) ══════════════════════════════ -->
+  <canvas id="avatar-canvas" aria-hidden="true"></canvas>
+
+  <!-- ═══ FIXED NAVBAR ═══════════════════════════════════════════════════ -->
+  <nav class="navbar" role="navigation" aria-label="Navegación principal">
+    <a class="navbar__logo" href="#hero">
+      <span>InsEgo</span>
+    </a>
+    <ul class="navbar__links" role="list">
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#proyectos">Proyectos</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+    <a href="#contacto" class="btn btn--outline btn--sm">Contáctanos</a>
+  </nav>
+
+  <!-- ═══ SCROLLABLE CONTENT ══════════════════════════════════════════════ -->
+  <main id="scroll-content">
+
+    <!-- ── HERO ──────────────────────────────────────────────────────────── -->
+    <section class="section section--hero" id="hero" aria-labelledby="hero-title">
+      <div class="section__inner hero__inner">
+        
+        <div class="hero__left">
+          <div class="badge" aria-label="Nuevo">✦ Directo, claro y sin rodeos</div>
+          <h1 class="hero__title" id="hero-title">
+            Tu web actual está atrapada en la Matrix de las<br/>
+            <span class="gradient-text">PLANTILLAS BARATAS</span>
+          </h1>
+          <div class="hero__cta">
+            <a href="#contacto" class="btn btn--primary btn--lg" id="btn-start">
+              Quiero salir del sistema
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" class="btn__icon"><path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </a>
+            <a href="#proyectos" class="btn btn--ghost btn--lg">Ver anomalías digitales</a>
+          </div>
+        </div>
+
+        <div class="hero__right">
+          <p class="hero__sub">
+            La red está inundada de páginas clonadas que gritan 'barato'. Yo no utilizo plantillas sin alma. Yo te desconecto de ese sistema. Diseño piezas de arte digital en 3D que elevan tu negocio a la categoría Premium y multiplican tus ventas. Si tu web no impresiona en 3 segundos, sigues perdiendo dinero.
+          </p>
+        </div>
+
+        <div class="scroll-hint" aria-hidden="true">
+          <span>Mueve el ratón · Haz scroll</span>
+          <div class="scroll-hint__arrow"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── SERVICIOS ────────────────────────────────────────────────────── -->
+    <section class="section" id="servicios" aria-labelledby="servicios-title">
+      <div class="section__inner">
+        <div class="section__label">Hablemos claro</div>
+        <h2 class="section__title" id="servicios-title">
+          El arte de vender <span class="gradient-text">sin que parezca que estás vendiendo.</span>
+        </h2>
+        <p class="section__desc">
+          Si tu web actual no te trae clientes todos los días, no tienes una web. Tienes un gasto. Yo hago esto para solucionarlo:
+        </p>
+        <div class="cards-grid">
+          <article class="card" id="card-3d">
+            <video class="card__video-bg" autoplay loop muted playsinline>
+              <source src="3d.mp4" type="video/mp4">
+            </video>
+            <div class="card__icon">
+              <svg viewBox="0 0 48 48" fill="none"><rect x="6" y="6" width="36" height="36" rx="10" fill="url(#cg1)"/><path d="M16 24l8-6 8 6-8 6-8-6z" fill="white" opacity="0.9"/><defs><linearGradient id="cg1" x1="6" y1="6" x2="42" y2="42"><stop stop-color="#818CF8"/><stop offset="1" stop-color="#38BDF8"/></linearGradient></defs></svg>
+            </div>
+            <h3 class="card__title">Interrupción de Patrón (3D)</h3>
+            <p class="card__text">Tu competencia sigue usando fotos de stock genéricas. Yo integro arte en 3D interactivo. El usuario entra en tu página, se detiene fascinado ante la pantalla, absorbe tu mensaje y te compra. Así de simple.</p>
+          </article>
+          <article class="card" id="card-web">
+            <video class="card__video-bg" autoplay loop muted playsinline>
+              <source src="codigomp4.mp4" type="video/mp4">
+            </video>
+            <div class="card__icon">
+              <svg viewBox="0 0 48 48" fill="none"><rect x="6" y="6" width="36" height="36" rx="10" fill="url(#cg2)"/><path d="M14 20h20M14 28h14" stroke="white" stroke-width="2.5" stroke-linecap="round"/><defs><linearGradient id="cg2" x1="6" y1="6" x2="42" y2="42"><stop stop-color="#A78BFA"/><stop offset="1" stop-color="#818CF8"/></linearGradient></defs></svg>
+            </div>
+            <h3 class="card__title">Código Puro a Medida</h3>
+            <p class="card__text">Si tu página tarda más de 2 segundos en cargar, tu cliente se va. Escribo código limpio, rápido y optimizado al byte. Sin plugins pesados ni basura. Diseño software que vuela.</p>
+          </article>
+          <article class="card" id="card-xr">
+            <div class="card__icon">
+              <svg viewBox="0 0 48 48" fill="none"><rect x="6" y="6" width="36" height="36" rx="10" fill="url(#cg3)"/><circle cx="24" cy="24" r="8" stroke="white" stroke-width="2.5"/><path d="M24 16v-4M24 36v-4M16 24h-4M36 24h-4" stroke="white" stroke-width="2" stroke-linecap="round"/><defs><linearGradient id="cg3" x1="6" y1="6" x2="42" y2="42"><stop stop-color="#38BDF8"/><stop offset="1" stop-color="#06B6D4"/></linearGradient></defs></svg>
+            </div>
+            <h3 class="card__title">Aplicaciones Móviles Fuertes</h3>
+            <p class="card__text">Desarrollo aplicaciones robustas para iOS y Android. Sin fallos técnicos ni sorpresas. Las diseño específicamente para fidelizar a tus clientes y hacer que vuelvan a pagarte.</p>
+          </article>
+          <article class="card" id="card-brand">
+            <div class="card__icon">
+              <svg viewBox="0 0 48 48" fill="none"><rect x="6" y="6" width="36" height="36" rx="10" fill="url(#cg4)"/><path d="M24 14l3.09 6.26L34 21.27l-5 4.87 1.18 6.86L24 30l-6.18 3.14L19 26.14 14 21.27l6.91-1.01L24 14z" fill="white" opacity="0.9"/><defs><linearGradient id="cg4" x1="6" y1="6" x2="42" y2="42"><stop stop-color="#F472B6"/><stop offset="1" stop-color="#A78BFA"/></linearGradient></defs></svg>
+            </div>
+            <h3 class="card__title">Sistemas de Extracción de Ingresos</h3>
+            <p class="card__text">Integro pasarelas de pago y automatizaciones avanzadas para que tu negocio facture en piloto automático. Te ayudo a trabajar menos horas mientras tus sistemas multiplican tus ingresos.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── PROYECTOS ─────────────────────────────────────────────────────── -->
+    <section class="section" id="proyectos" aria-labelledby="proyectos-title">
+      <div class="section__inner">
+        <div class="section__label">Obras reales</div>
+        <h2 class="section__title" id="proyectos-title">
+          Negocios que ahora <span class="gradient-text">juegan en otra liga</span>
+        </h2>
+        <div class="projects-grid">
+          <article class="project-card" id="proj-1">
+            <div class="project-card__img" style="background: linear-gradient(135deg,#1e1b4b,#312e81,#4338ca)">
+              <div class="project-card__mockup">
+                <div class="mockup-bar"></div>
+                <div class="mockup-line"></div>
+                <div class="mockup-line mockup-line--short"></div>
+                <div class="mockup-circle"></div>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <span class="project-card__tag">3D · E-Commerce Premium</span>
+              <h3 class="project-card__title">La belleza da confianza</h3>
+              <p class="project-card__desc">Vendían a 1.000€ pero su web parecía de los 90. Nadie confiaba. Diseñé una obra de arte digital y pudieron subir precios un 20%. Las ventas se dispararon.</p>
+            </div>
+          </article>
+          <article class="project-card" id="proj-2">
+            <div class="project-card__img" style="background: linear-gradient(135deg,#0c4a6e,#0369a1,#0ea5e9)">
+              <div class="project-card__mockup">
+                <div class="mockup-bar"></div>
+                <div class="mockup-line"></div>
+                <div class="mockup-circle mockup-circle--lg"></div>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <span class="project-card__tag">SaaS · Automatización</span>
+              <h3 class="project-card__title">Adiós a las tareas pesadas</h3>
+              <p class="project-card__desc">Creé una plataforma interna a medida que les ahorra 30 horas de trabajo repetitivo a la semana. Menos personal, más margen.</p>
+            </div>
+          </article>
+          <article class="project-card project-card--wide" id="proj-3">
+            <div class="project-card__img" style="background: linear-gradient(135deg,#1a0533,#6d28d9,#8b5cf6)">
+              <div class="project-card__mockup">
+                <div class="mockup-bar"></div>
+                <div class="mockup-line"></div>
+                <div class="mockup-line mockup-line--short"></div>
+                <div class="mockup-line"></div>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <span class="project-card__tag">Mobile App · FinTech</span>
+              <h3 class="project-card__title">App FinTech para Miles</h3>
+              <p class="project-card__desc">Desarrollo de una app financiera limpia y directa. Cero caídas, 100% segura y con más de 100k descargas activas en tiendas.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── TECH STACK ────────────────────────────────────────────────────── -->
+    <section class="section section--stats" id="tech-stack" aria-label="Tecnologías">
+      <div class="section__inner" style="max-width: 100%;">
+
+        <div class="tech-marquee-wrapper">
+          <div class="tech-marquee tech-marquee--left">
+            <div class="tech-marquee__inner">
+              <span>THREE.JS</span><span>WEBGL</span><span>NODE.JS</span><span>TYPESCRIPT</span><span>JAVASCRIPT</span><span>REACT</span><span>NEXT.JS</span><span>TAILWIND</span>
+              <span>THREE.JS</span><span>WEBGL</span><span>NODE.JS</span><span>TYPESCRIPT</span><span>JAVASCRIPT</span><span>REACT</span><span>NEXT.JS</span><span>TAILWIND</span>
+            </div>
+          </div>
+          <div class="tech-marquee tech-marquee--right">
+            <div class="tech-marquee__inner">
+              <span>VITE</span><span>SUPABASE</span><span>FIREBASE</span><span>GSAP</span><span>FIGMA</span><span>HTML5</span><span>CSS3</span><span>VERCEL</span>
+              <span>VITE</span><span>SUPABASE</span><span>FIREBASE</span><span>GSAP</span><span>FIGMA</span><span>HTML5</span><span>CSS3</span><span>VERCEL</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ── CONTACTO ──────────────────────────────────────────────────────── -->
+    <section class="section section--contact" id="contacto" aria-labelledby="contact-title">
+      <div class="section__inner contact__inner">
+        <div class="section__label">Hablemos</div>
+        <h2 class="section__title" id="contact-title">
+          Miras tu web actual y sabes que parece del siglo pasado.<br/>
+          <span class="gradient-text">¿Te da orgullo o te da vergüenza?</span>
+        </h2>
+        <p class="section__desc">
+          Si quieres una plantilla clonada de 50€, cierra esta pestaña. Si estás listo para salir del sistema tradicional y encargar una obra de arte digital diseñada específicamente para superar a tu competencia, hablemos.
+        </p>
+        <div class="contact-actions">
+          <a href="https://wa.me/34600000000?text=Hola,%20me%20gustar%C3%ADa%20tener%20m%C3%A1s%20informaci%C3%B3n%20sobre%20vuestras%20ofertas%20y%20servicios%20Premium." target="_blank" class="btn btn--whatsapp btn--lg">
+            <svg viewBox="0 0 24 24" fill="currentColor" class="btn__icon" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+            Contactar por WhatsApp
+          </a>
+          <a href="mailto:tu@email.com?subject=Informaci%C3%B3n%20sobre%20ofertas&body=Hola,%20me%20gustar%C3%ADa%20tener%20m%C3%A1s%20informaci%C3%B3n%20sobre%20vuestras%20ofertas%20y%20servicios%20Premium." class="btn btn--outline btn--lg">
+            <svg viewBox="0 0 24 24" fill="none" class="btn__icon" aria-hidden="true"><path d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2m20 0v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6m20 0-10 7L2 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Enviar un Email
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── FOOTER ────────────────────────────────────────────────────────── -->
+    <footer class="footer" role="contentinfo">
+      <div class="footer__inner">
+        <div class="navbar__logo" aria-label="InsEgo">
+          <span>InsEgo</span>
+        </div>
+        <div class="footer__legal">
+          <a href="aviso-legal.html">Aviso Legal</a>
+          <a href="politica-privacidad.html">Política de Privacidad</a>
+          <a href="politica-cookies.html">Política de Cookies</a>
+        </div>
+        <p class="footer__copy">© 2026 InsEgo. Hago webs y apps que traen dinero. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+
+  </main><!-- /#scroll-content -->
+
+  <!-- ═══ COOKIE BANNER ══════════════════════════════════════════════════ -->
+  <div class="cookie-banner" id="cookie-banner" aria-hidden="true">
+    <div class="cookie-banner__content">
+      <h4 class="cookie-banner__title">Uso de Cookies</h4>
+      <p class="cookie-banner__text">
+        Utilizamos cookies propias y de terceros para mejorar tu experiencia, personalizar el contenido y analizar el tráfico de nuestra web. 
+        Al hacer clic en "Aceptar", consientes su uso. Puedes leer más en nuestra <a href="politica-cookies.html">Política de Cookies</a>.
+      </p>
+    </div>
+    <div class="cookie-banner__actions">
+      <button class="btn btn--sm btn--primary" id="btn-accept-cookies">Aceptar todo</button>
+      <button class="btn btn--sm btn--ghost" id="btn-reject-cookies">Rechazar no esenciales</button>
+    </div>
+  </div>
+
+
+
+  <script type="module" src="app.js?v=7"></script>
+</body>
+</html>
