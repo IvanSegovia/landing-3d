@@ -1,5 +1,9 @@
 {
+  "name": "landing-3d",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
   "dependencies": {
-    "three": "^0.185.1"
+    "three": "^0.164.1"
   }
 }
