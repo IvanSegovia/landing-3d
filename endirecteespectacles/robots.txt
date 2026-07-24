@@ -1,0 +1,25 @@
+# Robots.txt for ENDIRECTE ESPECTACLES
+# Optimized for Google, Bing, and AI Generative Search Engines (Gemini, ChatGPT, Perplexity)
+
+User-agent: *
+Allow: /
+Disallow: /scratch/
+Disallow: /scraped_site/
+
+# AI Crawlers explicit permission for Generative Search Optimization (GEO)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+Sitemap: https://endirecteespectacles.com/sitemap.xml

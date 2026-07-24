@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Básico -->
+    <title>El Diamante Detailing | Lavado de Coches y Detailing Profesional en Gandia</title>
+    <meta name="description" content="El Diamante Detailing en Gandia. Cuidamos cada detalle de tu coche o moto: lavado completo, limpieza de tapicería a mano, tratamiento cerámico y desinfección. ¡Reserva ya por WhatsApp!">
+    <meta name="keywords" content="detailing Gandia, lavado de coches Gandia, limpieza de tapiceria Gandia, tratamiento ceramico Gandia, pulido de faros Gandia, El Diamante Detailing, limpieza coche Gandia, lavado a mano Gandia">
+    <meta name="author" content="El Diamante Detailing">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://eldiamantedetailing.es/">
+
+    <!-- Open Graph / Facebook / WhatsApp Preview (Optimización para compartir) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="El Diamante Detailing | Cuidamos cada detalle en Gandia">
+    <meta property="og:description" content="El mejor servicio de estética y limpieza profesional para tu vehículo en Gandia. Lavado completo, tapizados, tratamiento cerámico y más.">
+    <meta property="og:image" content="https://placehold.co/1200x630/030712/00d2ff?text=El+Diamante+Detailing+Gandia">
+    <meta property="og:url" content="https://eldiamantedetailing.es/">
+    <meta property="og:site_name" content="El Diamante Detailing">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="El Diamante Detailing | Detailing Profesional en Gandia">
+    <meta name="twitter:description" content="Cuidamos de tu vehículo con productos premium y acabados profesionales. Lavado a mano y tratamientos cerámicos en Gandia.">
+    <meta name="twitter:image" content="https://placehold.co/1200x630/030712/00d2ff?text=El+Diamante+Detailing+Gandia">
+
+    <!-- Datos Estructurados Schema.org para SEO Local -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AutoWash",
+      "name": "El Diamante Detailing",
+      "description": "Servicio premium de detailing, estética y lavado de vehículos a mano en Gandia. Especialistas en limpieza de tapizados y recubrimientos cerámicos.",
+      "image": "https://placehold.co/800x800/030712/00d2ff?text=El+Diamante+Detailing",
+      "url": "https://eldiamantedetailing.es/",
+      "telephone": "+34637893301",
+      "priceRange": "€€",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Av. d'Alcodar 21",
+        "addressLocality": "Gandia",
+        "postalCode": "46701",
+        "addressRegion": "Valencia",
+        "addressCountry": "ES"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 38.981447,
+        "longitude": -0.174789
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "58"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "07:30",
+          "closes": "16:00"
+        }
+      ],
+      "sameAs": [
+        "https://instagram.com/eldiamante.detailing"
+      ]
+    }
+    </script>
+
+    <!-- Tailwind CSS para maquetación modular y ágil -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Rajdhani para títulos deportivos/exclusivos, Inter para contenido fluido -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome para iconografía de automoción y logotipos de Google / WhatsApp -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#030712',
+                        cardBg: '#091124',
+                        neonBlue: '#00d2ff',
+                        neonDarkBlue: '#005f73',
+                        accentGray: '#1e293b'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Rajdhani', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body {
+            background-color: #030712;
+            background-image: 
+                radial-gradient(circle at 50% 0%, rgba(0, 210, 255, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 100% 60%, rgba(0, 95, 115, 0.1) 0%, transparent 40%),
+                radial-gradient(circle at 0% 100%, rgba(0, 210, 255, 0.08) 0%, transparent 40%);
+            background-attachment: fixed;
+        }
+
+        /* Estilo para el mapa en modo oscuro cyberpunk */
+        .dark-map-container {
+            position: relative;
+            overflow: hidden;
+            border-radius: 1rem;
+            border: 1px solid rgba(0, 210, 255, 0.2);
+            box-shadow: 0 0 15px rgba(0, 210, 255, 0.1);
+            transition: all 0.4s ease;
+        }
+        
+        .dark-map-container:hover {
+            border-color: rgba(0, 210, 255, 0.5);
+            box-shadow: 0 0 25px rgba(0, 210, 255, 0.25);
+        }
+
+        .dark-map-iframe {
+            filter: grayscale(100%) invert(90%) contrast(120%) opacity(80%);
+            transition: all 0.5s ease;
+        }
+
+        .dark-map-container:hover .dark-map-iframe {
+            filter: grayscale(10%) invert(0%) contrast(100%) opacity(100%);
+        }
+
+        /* Efectos de Brillo Neón */
+        .neon-text-glow {
+            text-shadow: 0 0 8px rgba(0, 210, 255, 0.6), 0 0 20px rgba(0, 210, 255, 0.2);
+        }
+        
+        .neon-border-glow {
+            box-shadow: 0 0 15px rgba(0, 210, 255, 0.15);
+            border: 1px solid rgba(0, 210, 255, 0.3);
+        }
+
+        .neon-border-glow:hover {
+            box-shadow: 0 0 25px rgba(0, 210, 255, 0.3);
+            border-color: rgba(0, 210, 255, 0.6);
+            transition: all 0.4s ease;
+        }
+
+        .premium-table th {
+            border-bottom: 2px solid rgba(0, 210, 255, 0.3);
+        }
+
+        /* Personalización de barra de desplazamiento estilo cyberpunk */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #030712;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #091124;
+            border: 2px solid #00d2ff;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #00d2ff;
+        }
+
+        /* Animación suave para cambio de precios */
+        .price-transition {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-100 min-h-screen selection:bg-neonBlue selection:text-darkBg">
+
+    <div class="max-w-6xl mx-auto px-4 py-8">
+
+        <!-- CABECERA Y LOGOTIPO -->
+        <header class="text-center mb-12 relative">
+            <div class="absolute top-0 left-1/2 -translate-x-1/2 w-48 h-48 bg-neonBlue/10 rounded-full blur-3xl pointer-events-none"></div>
+            
+            <div class="inline-block mb-4 relative z-10">
+                <!-- Icono de Diamante estilizado similar al de la imagen -->
+                <div class="relative flex items-center justify-center p-4">
+                    <svg class="w-20 h-20 text-white drop-shadow-[0_0_12px_rgba(0,210,255,0.7)]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+                        <path d="M6 3h12l4 6-10 12L2 9z" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M11 3L8 9l4 12 4-12-3-6" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2 9h20" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Título de Marca con Tipografía Premium -->
+            <h1 class="font-display text-4xl md:text-6xl tracking-[0.25em] text-white uppercase font-light">
+                EL DIA<span class="font-normal text-transparent bg-clip-text bg-gradient-to-r from-white to-neonBlue">MANT</span>E
+            </h1>
+            
+            <!-- Subtítulo con Diamantes decorativos -->
+            <div class="flex items-center justify-center gap-3 text-neonBlue text-sm uppercase tracking-[0.4em] font-display my-3">
+                <span class="text-xs">◆</span>
+                <span>DETAILING GANDIA</span>
+                <span class="text-xs">◆</span>
+            </div>
+            
+            <p class="text-gray-400 text-xs md:text-sm tracking-[0.3em] uppercase max-w-md mx-auto">
+                Cuidamos cada detalle de tu vehículo
+            </p>
+            <p class="sr-only">Tu centro de estética del automóvil, limpieza a mano, lavado de tapicería y tratamiento cerámico en Gandia (Valencia).</p>
+        </header>
+
+        <!-- MENÚ DE NAVEGACIÓN RÁPIDA -->
+        <div class="flex justify-center flex-wrap gap-2 md:gap-4 mb-10 text-xs uppercase tracking-wider font-display">
+            <a href="#precios" class="px-3 py-2 border-b border-transparent hover:border-neonBlue text-gray-400 hover:text-white transition">Tarifas</a>
+            <a href="#extras" class="px-3 py-2 border-b border-transparent hover:border-neonBlue text-gray-400 hover:text-white transition">Servicios Extras</a>
+            <a href="#opiniones" class="px-3 py-2 border-b border-transparent hover:border-neonBlue text-gray-400 hover:text-white transition">Opiniones</a>
+            <a href="#configurador" class="px-3 py-2 border-b border-transparent hover:border-neonBlue text-gray-400 hover:text-white transition">Presupuesto</a>
+            <a href="#reservas" class="px-3 py-2 border-b border-transparent hover:border-neonBlue text-gray-400 hover:text-white transition">Contacto</a>
+        </div>
+
+        <!-- SWITCH DE DETALLE DE IVA -->
+        <div class="flex justify-end items-center gap-3 mb-6 bg-cardBg/60 p-3 rounded-xl border border-accentGray/50 max-w-xs ml-auto">
+            <span class="text-xs text-gray-400 uppercase tracking-wider">Ver precios con IVA (21%)</span>
+            <button id="ivaToggle" onclick="toggleIva()" class="w-12 h-6 rounded-full bg-accentGray relative p-1 transition-colors duration-300 focus:outline-none">
+                <div id="ivaKnob" class="w-4 h-4 rounded-full bg-neonBlue transition-transform duration-300 transform translate-x-0"></div>
+            </button>
+        </div>
+
+        <!-- SECCIÓN 1: TABLA PRINCIPAL DE SERVICIOS -->
+        <section id="precios" class="mb-14">
+            <div class="flex items-center justify-between border-b border-accentGray pb-3 mb-6">
+                <h2 class="font-display text-lg md:text-2xl tracking-[0.2em] uppercase text-white flex items-center gap-2">
+                    <span class="text-neonBlue">01.</span> Servicios y Precios <span class="text-xs text-gray-400 font-sans tracking-normal lowercase italic">desde</span>
+                </h2>
+                <span class="text-xs text-gray-500 uppercase tracking-widest hidden md:inline">Desliza para ver la tabla completa →</span>
+            </div>
+
+            <!-- Tabla Premium Auto-scrolleable -->
+            <div class="overflow-x-auto rounded-xl border border-accentGray/80 bg-cardBg/40 backdrop-blur-md shadow-2xl">
+                <table class="w-full text-center min-w-[750px] premium-table">
+                    <thead>
+                        <tr class="bg-darkBg/80 text-gray-400 text-xs tracking-wider uppercase">
+                            <th class="py-5 px-6 text-left font-display font-semibold w-1/4">Categoría de Detailing</th>
+                            <th class="py-5 px-4 font-display">
+                                <i class="fa-solid fa-car text-neonBlue text-base mb-1 block"></i>
+                                <span class="text-white block font-medium">Turismo</span>
+                            </th>
+                            <th class="py-5 px-4 font-display">
+                                <i class="fa-solid fa-truck-pickup text-neonBlue text-base mb-1 block"></i>
+                                <span class="text-white block font-medium">4x4 Monovolumen</span>
+                            </th>
+                            <th class="py-5 px-4 font-display">
+                                <i class="fa-solid fa-van-shuttle text-neonBlue text-base mb-1 block"></i>
+                                <span class="text-white block font-medium">Furgoneta Med.</span>
+                            </th>
+                            <th class="py-5 px-4 font-display">
+                                <i class="fa-solid fa-truck text-neonBlue text-base mb-1 block"></i>
+                                <span class="text-white block font-medium">Furgoneta Gr.</span>
+                            </th>
+                            <th class="py-5 px-4 font-display">
+                                <i class="fa-solid fa-motorcycle text-neonBlue text-base mb-1 block"></i>
+                                <span class="text-white block font-medium">Moto</span>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-accentGray/50 text-sm">
+                        <!-- Lavado Completo -->
+                        <tr class="hover:bg-neonBlue/[0.02] transition">
+                            <td class="py-6 px-6 text-left font-medium text-white border-r border-accentGray/40">
+                                <div class="flex items-center gap-3">
+                                    <span class="w-2 h-2 rounded-full bg-neonBlue shadow-[0_0_8px_#00d2ff]"></span>
+                                    <div>
+                                        <p class="font-display tracking-widest text-base uppercase">Lavado Completo</p>
+                                        <p class="text-xs text-gray-400 font-sans normal-case font-normal mt-0.5">Interior minucioso + exterior brillante</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="py-6 px-4 font-display font-semibold text-lg text-white price-transition" data-base-price="30">30€</td>
+                            <td class="py-6 px-4 font-display font-semibold text-lg text-white price-transition" data-base-price="35">35€</td>
+                            <td class="py-6 px-4 font-display font-semibold text-lg text-white price-transition" data-base-price="40">40€</td>
+                            <td class="py-6 px-4 font-display font-semibold text-lg text-white price-transition" data-base-price="45">45€</td>
+                            <td class="py-6 px-4 font-display font-semibold text-lg text-white price-transition" data-base-price="12">12€</td>
+                        </tr>
+                        <!-- Lavado Completo + Tapizado -->
+                        <tr class="hover:bg-neonBlue/[0.02] transition">
+                            <td class="py-6 px-6 text-left font-medium text-white border-r border-accentGray/40">
+                                <div class="flex items-center gap-3">
+                                    <span class="w-2 h-2 rounded-full bg-cyan-400 shadow-[0_0_8px_#22d3ee]"></span>
+                                    <div>
+                                        <p class="font-display tracking-widest text-base uppercase">Lavado Comp. + Tapizado</p>
+                                        <p class="text-xs text-gray-400 font-sans normal-case font-normal mt-0.5">Tratamiento profundo de tapizados e interiores</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="py-6 px-4 font-display font-semibold text-lg text-white price-transition" data-base-price="120">120€</td>
+                            <td class="py-6 px-4 font-display font-semibold text-lg text-white price-transition" data-base-price="150">150€</td>
+                            <td class="py-6 px-4 font-display text-gray-400 text-xs tracking-wider uppercase border-accentGray/40 italic">Consultar</td>
+                            <td class="py-6 px-4 font-display text-gray-400 text-xs tracking-wider uppercase border-accentGray/40 italic">Consultar</td>
+                            <td class="py-6 px-4 font-display text-gray-500 font-semibold text-lg">-</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 2: SERVICIOS EXTRAS -->
+        <section id="extras" class="mb-14">
+            <div class="flex items-center justify-between border-b border-accentGray pb-3 mb-6">
+                <h2 class="font-display text-lg md:text-2xl tracking-[0.2em] uppercase text-white">
+                    <span class="text-neonBlue">02.</span> Servicios Extras <span class="text-xs text-gray-400 font-sans tracking-normal lowercase italic">desde</span>
+                </h2>
+            </div>
+
+            <!-- Grid de Servicios Extras -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                
+                <!-- Item Extra -->
+                <div class="flex items-center justify-between p-4 rounded-xl border border-accentGray/40 bg-cardBg/20 hover:bg-cardBg/60 transition group">
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-lg bg-neonBlue/10 flex items-center justify-center text-neonBlue group-hover:bg-neonBlue group-hover:text-darkBg transition-all duration-300">
+                            <i class="fa-solid fa-car-side text-lg"></i>
+                        </div>
+                        <div>
+                            <p class="font-display text-sm tracking-widest uppercase text-gray-200">Limpieza solo exterior</p>
+                            <p class="text-xs text-gray-500">Champú de alta gama y secado manual</p>
+                        </div>
+                    </div>
+                    <div class="font-display font-bold text-neonBlue text-lg price-transition" data-base-price="20">20€</div>
+                </div>
+
+                <!-- Item Extra -->
+                <div class="flex items-center justify-between p-4 rounded-xl border border-accentGray/40 bg-cardBg/20 hover:bg-cardBg/60 transition group">
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-lg bg-neonBlue/10 flex items-center justify-center text-neonBlue group-hover:bg-neonBlue group-hover:text-darkBg transition-all duration-300">
+                            <i class="fa-solid fa-soap text-lg"></i>
+                        </div>
+                        <div>
+                            <p class="font-display text-sm tracking-widest uppercase text-gray-200">Limpieza solo interior</p>
+                            <p class="text-xs text-gray-500">Aspirado profundo, polvo y cristales</p>
+                        </div>
+                    </div>
+                    <div class="font-display font-bold text-neonBlue text-lg price-transition" data-base-price="20">20€</div>
+                </div>
+
+                <!-- Item Extra -->
+                <div class="flex items-center justify-between p-4 rounded-xl border border-accentGray/40 bg-cardBg/20 hover:bg-cardBg/60 transition group">
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-lg bg-neonBlue/10 flex items-center justify-center text-neonBlue group-hover:bg-neonBlue group-hover:text-darkBg transition-all duration-300">
+                            <i class="fa-solid fa-shield-halved text-lg"></i>
+                        </div>
+                        <div>
+                            <p class="font-display text-sm tracking-widest uppercase text-gray-200">Tratamiento cerámico protector</p>
+                            <p class="text-xs text-neonBlue">Protección exterior (duración de 2 meses)</p>
+                        </div>
+                    </div>
+                    <div class="font-display font-bold text-neonBlue text-lg price-transition" data-base-price="70">70€</div>
+                </div>
+
+                <!-- Item Extra -->
+                <div class="flex items-center justify-between p-4 rounded-xl border border-accentGray/40 bg-cardBg/20 hover:bg-cardBg/60 transition group">
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-lg bg-neonBlue/10 flex items-center justify-center text-neonBlue group-hover:bg-neonBlue group-hover:text-darkBg transition-all duration-300">
+                            <i class="fa-solid fa-gem text-lg"></i>
+                        </div>
+                        <div>
+                            <p class="font-display text-sm tracking-widest uppercase text-gray-200">Mantenimiento cerámico</p>
+                            <p class="text-xs text-gray-500">Conserva el brillo espejo original</p>
+                        </div>
+                    </div>
+                    <div class="font-display font-bold text-neonBlue text-lg price-transition" data-base-price="20">20€</div>
+                </div>
+
+                <!-- Item Extra -->
+                <div class="flex items-center justify-between p-4 rounded-xl border border-accentGray/40 bg-cardBg/20 hover:bg-cardBg/60 transition group">
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-lg bg-neonBlue/10 flex items-center justify-center text-neonBlue group-hover:bg-neonBlue group-hover:text-darkBg transition-all duration-300">
+                            <i class="fa-solid fa-paw text-lg"></i>
+                        </div>
+                        <div>
+                            <p class="font-display text-sm tracking-widest uppercase text-gray-200">Suplemento pelo de mascota</p>
+                            <p class="text-xs text-gray-500">Eliminación minuciosa de pelos rebeldes</p>
+                        </div>
+                    </div>
+                    <div class="font-display font-bold text-neonBlue text-lg price-transition" data-base-price="10">10€</div>
+                </div>
+
+                <!-- Item Extra -->
+                <div class="flex items-center justify-between p-4 rounded-xl border border-accentGray/40 bg-cardBg/20 hover:bg-cardBg/60 transition group">
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-lg bg-neonBlue/10 flex items-center justify-center text-neonBlue group-hover:bg-neonBlue group-hover:text-darkBg transition-all duration-300">
+                            <i class="fa-solid fa-circle-dot text-lg"></i>
+                        </div>
+                        <div>
+                            <p class="font-display text-sm tracking-widest uppercase text-gray-200">Llantas y pasos de rueda</p>
+                            <p class="text-xs text-gray-500">Limpieza a fondo con desinfectante férrico</p>
+                        </div>
+                    </div>
+                    <div class="font-display font-bold text-neonBlue text-lg price-transition" data-base-price="20">20€</div>
+                </div>
+
+                <!-- Item Extra -->
+                <div class="flex items-center justify-between p-4 rounded-xl border border-accentGray/40 bg-cardBg/20 hover:bg-cardBg/60 transition group">
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-lg bg-neonBlue/10 flex items-center justify-center text-neonBlue group-hover:bg-neonBlue group-hover:text-darkBg transition-all duration-300">
+                            <i class="fa-solid fa-spray-can-sparkles text-lg"></i>
+                        </div>
+                        <div>
+                            <p class="font-display text-sm tracking-widest uppercase text-gray-200">Desinfección de habitáculo</p>
+                            <p class="text-xs text-gray-500">Eliminación total de olores y bacterias</p>
+                        </div>
+                    </div>
+                    <div class="font-display font-bold text-neonBlue text-lg price-transition" data-base-price="10">10€</div>
+                </div>
+
+                <!-- Item Extra -->
+                <div class="flex items-center justify-between p-4 rounded-xl border border-accentGray/40 bg-cardBg/20 hover:bg-cardBg/60 transition group">
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-lg bg-neonBlue/10 flex items-center justify-center text-neonBlue group-hover:bg-neonBlue group-hover:text-darkBg transition-all duration-300">
+                            <i class="fa-solid fa-couch text-lg"></i>
+                        </div>
+                        <div>
+                            <p class="font-display text-sm tracking-widest uppercase text-gray-200">Hidratación asientos de piel</p>
+                            <p class="text-xs text-gray-500">Nutrición premium para evitar agrietamientos</p>
+                        </div>
+                    </div>
+                    <div class="font-display font-bold text-neonBlue text-lg price-transition" data-base-price="40">40€</div>
+                </div>
+
+                <!-- Item Extra -->
+                <div class="flex items-center justify-between p-4 rounded-xl border border-accentGray/40 bg-cardBg/20 hover:bg-cardBg/60 transition group">
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-lg bg-neonBlue/10 flex items-center justify-center text-neonBlue group-hover:bg-neonBlue group-hover:text-darkBg transition-all duration-300">
+                            <i class="fa-solid fa-wand-magic-sparkles text-lg"></i>
+                        </div>
+                        <div>
+                            <p class="font-display text-sm tracking-widest uppercase text-gray-200">Recuperación plásticos ext.</p>
+                            <p class="text-xs text-gray-500">Devuelve el color negro original a las molduras</p>
+                        </div>
+                    </div>
+                    <div class="font-display font-bold text-neonBlue text-lg price-transition" data-base-price="10">10€</div>
+                </div>
+
+                <!-- Item Extra -->
+                <div class="flex items-center justify-between p-4 rounded-xl border border-accentGray/40 bg-cardBg/20 hover:bg-cardBg/60 transition group">
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-lg bg-neonBlue/10 flex items-center justify-center text-neonBlue group-hover:bg-neonBlue group-hover:text-darkBg transition-all duration-300">
+                            <i class="fa-solid fa-chair text-lg"></i>
+                        </div>
+                        <div>
+                            <p class="font-display text-sm tracking-widest uppercase text-gray-200">Tapizado de asiento individual</p>
+                            <p class="text-xs text-gray-500">Limpieza exhaustiva por pieza</p>
+                        </div>
+                    </div>
+                    <div class="font-display font-bold text-neonBlue text-lg price-transition" data-base-price="40">40€</div>
+                </div>
+            </div>
+
+            <!-- Alfombrillas bajo pedido -->
+            <div class="mt-4 p-4 rounded-xl border border-dashed border-accentGray bg-cardBg/10 text-center">
+                <p class="text-xs md:text-sm text-gray-400 font-display tracking-widest uppercase">
+                    <i class="fa-solid fa-box-open text-neonBlue mr-2"></i> Disponemos de alfombrillas y cubre maleteros a medida <span class="text-neonBlue">(Bajo Pedido)</span>
+                </p>
+            </div>
+
+            <div class="text-right text-xs text-gray-500 mt-4 uppercase tracking-widest">
+                Los precios no incluyen <span class="text-neonBlue font-semibold">el IVA</span>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 3: RESEÑAS DE GOOGLE (INTEGRACIÓN REPRODUCIENDO image_e60aa8.png) -->
+        <section id="opiniones" class="mb-14">
+            <!-- Título con Línea y Píldora de Puntuación (Estilo exacto de image_e60aa8.png) -->
+            <div class="flex items-center justify-between border-b border-gray-800 pb-3 mb-6">
+                <h2 class="font-display text-xl md:text-2xl tracking-[0.2em] uppercase text-white flex items-center gap-2">
+                    03. RESEÑAS EN GOOGLE
+                </h2>
+                <!-- Badge oficial de valoración global -->
+                <div class="flex items-center gap-2 bg-transparent border border-gray-800 px-4 py-1.5 rounded-full text-xs">
+                    <span class="font-bold text-white text-sm">4.9</span>
+                    <div class="flex text-[10px] text-amber-500 gap-0.5">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <span class="text-[10px] text-gray-500 font-medium tracking-wide">(+50 opiniones)</span>
+                </div>
+            </div>
+
+            <!-- Grid de Valoraciones (Estilo exacto de image_e60aa8.png) -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                
+                <!-- Reseña 1: Javier S. -->
+                <div class="bg-cardBg/30 border border-gray-800 p-6 rounded-[20px] flex flex-col justify-between relative group hover:border-neonBlue/20 transition duration-300">
+                    <div class="absolute top-4 right-6 text-gray-800 text-3xl font-serif pointer-events-none select-none">“</div>
+                    <div>
+                        <div class="flex items-center gap-3.5 mb-5">
+                            <div class="w-10 h-10 rounded-full bg-cyan-950/40 border border-cyan-500/30 flex items-center justify-center font-bold text-cyan-400 text-sm">
+                                JS
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-sm text-white font-sans tracking-wide">Javier S.</h4>
+                                <div class="flex gap-0.5 text-amber-500 text-xs mt-1">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-xs text-gray-400 leading-relaxed italic font-sans pr-4">
+                            "Llevé mi coche para un lavado completo más tapizado y el resultado ha sido espectacular. Estaba lleno de pelos de mascota y las manchas de los asientos han desaparecido por completo. Huele a nuevo."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-gray-800/60 flex justify-between items-center text-[10px]">
+                        <span class="text-gray-500 uppercase tracking-widest font-sans font-medium">HACE 2 SEMANAS</span>
+                        <span class="text-emerald-400 font-semibold tracking-wider uppercase flex items-center gap-1.5">
+                            <i class="fa-solid fa-circle-check text-xs"></i> Verificado
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Reseña 2: María Delgado -->
+                <div class="bg-cardBg/30 border border-gray-800 p-6 rounded-[20px] flex flex-col justify-between relative group hover:border-neonBlue/20 transition duration-300">
+                    <div class="absolute top-4 right-6 text-gray-800 text-3xl font-serif pointer-events-none select-none">“</div>
+                    <div>
+                        <div class="flex items-center gap-3.5 mb-5">
+                            <div class="w-10 h-10 rounded-full bg-indigo-950/40 border border-indigo-500/30 flex items-center justify-center font-bold text-indigo-400 text-sm">
+                                MD
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-sm text-white font-sans tracking-wide">María Delgado</h4>
+                                <div class="flex gap-0.5 text-amber-500 text-xs mt-1">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-xs text-gray-400 leading-relaxed italic font-sans pr-4">
+                            "El mejor sitio de detailing en Gandia con diferencia. Le aplicaron el tratamiento cerámico y el brillo de la pintura es impresionante, parece un espejo. Muy profesionales y puntuales. Repetiré seguro."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-gray-800/60 flex justify-between items-center text-[10px]">
+                        <span class="text-gray-500 uppercase tracking-widest font-sans font-medium">HACE UN MES</span>
+                        <span class="text-emerald-400 font-semibold tracking-wider uppercase flex items-center gap-1.5">
+                            <i class="fa-solid fa-circle-check text-xs"></i> Verificado
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Reseña 3: Carlos Ortega -->
+                <div class="bg-cardBg/30 border border-gray-800 p-6 rounded-[20px] flex flex-col justify-between relative group hover:border-neonBlue/20 transition duration-300">
+                    <div class="absolute top-4 right-6 text-gray-800 text-3xl font-serif pointer-events-none select-none">“</div>
+                    <div>
+                        <div class="flex items-center gap-3.5 mb-5">
+                            <div class="w-10 h-10 rounded-full bg-purple-950/40 border border-purple-500/30 flex items-center justify-center font-bold text-purple-400 text-sm">
+                                CO
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-sm text-white font-sans tracking-wide">Carlos Ortega</h4>
+                                <div class="flex gap-0.5 text-amber-500 text-xs mt-1">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-xs text-gray-400 leading-relaxed italic font-sans pr-4">
+                            "Increíble trabajo con la recuperación de plásticos exteriores y limpieza de llantas. Se nota que les apasiona su trabajo y cuidan cada detalle al milímetro. Precios honestos para un acabado premium."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-gray-800/60 flex justify-between items-center text-[10px]">
+                        <span class="text-gray-500 uppercase tracking-widest font-sans font-medium">HACE 3 SEMANAS</span>
+                        <span class="text-emerald-400 font-semibold tracking-wider uppercase flex items-center gap-1.5">
+                            <i class="fa-solid fa-circle-check text-xs"></i> Verificado
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Botones interactivos (Réplica exacta de image_e60aa8.png) -->
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="https://acesse.one/f1355gq" target="_blank" class="w-full sm:w-auto bg-transparent border border-gray-700 text-gray-300 hover:text-white hover:border-neonBlue/60 transition duration-300 px-6 py-3 rounded-xl text-xs uppercase tracking-[0.15em] font-display font-semibold flex items-center justify-center gap-2">
+                    <span class="text-red-500 font-extrabold font-sans text-sm pr-1">G</span> VER TODAS LAS OPINIONES
+                </a>
+                <a href="https://acesse.one/f1355gq" target="_blank" class="w-full sm:w-auto bg-transparent border border-gray-700 text-gray-300 hover:text-white hover:border-neonBlue/60 transition duration-300 px-6 py-3 rounded-xl text-xs uppercase tracking-[0.15em] font-display font-semibold flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-pen-to-square text-xs"></i> DEJAR UNA OPINIÓN EN GOOGLE
+                </a>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 4: CONFIGURADOR INTERACTIVO DE RESERVA -->
+        <section id="configurador" class="mb-14 relative z-10">
+            <div class="absolute inset-0 bg-gradient-to-r from-neonBlue/5 to-transparent rounded-2xl -z-10 pointer-events-none"></div>
+            
+            <div class="neon-border-glow bg-cardBg/80 p-6 md:p-8 rounded-2xl">
+                <div class="text-center mb-6">
+                    <span class="text-xs font-display text-neonBlue uppercase tracking-[0.3em] bg-neonBlue/10 px-3 py-1 rounded-full">Calculador de Presupuestos</span>
+                    <h3 class="font-display text-2xl tracking-[0.15em] text-white uppercase mt-3">Diseña tu servicio a medida</h3>
+                    <p class="text-xs text-gray-400 mt-1">Selecciona tus opciones para ver una estimación aproximada y resérvala instantáneamente por WhatsApp.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Configuración -->
+                    <div class="space-y-5">
+                        <!-- 1. Tipo Vehículo -->
+                        <div>
+                            <label class="block text-xs uppercase tracking-widest text-gray-400 mb-2 font-display">1. Selecciona tu Vehículo</label>
+                            <select id="calcVehicle" onchange="calculateQuote()" class="w-full bg-darkBg border border-accentGray rounded-xl px-4 py-3 text-white focus:outline-none focus:border-neonBlue text-sm">
+                                <option value="turismo">Turismo</option>
+                                <option value="4x4">4x4 / Monovolumen</option>
+                                <option value="furgoneta_m">Furgoneta Mediana</option>
+                                <option value="furgoneta_g">Furgoneta Grande</option>
+                                <option value="moto">Moto</option>
+                            </select>
+                        </div>
+
+                        <!-- 2. Servicio Base -->
+                        <div>
+                            <label class="block text-xs uppercase tracking-widest text-gray-400 mb-2 font-display">2. Tratamiento Principal</label>
+                            <div class="grid grid-cols-2 gap-3">
+                                <button type="button" id="serviceBase1" onclick="selectBaseService(30, 'Lavado Completo')" class="p-3 rounded-xl border border-neonBlue bg-neonBlue/10 text-white font-display text-xs tracking-widest uppercase transition-all duration-200">
+                                    Lavado Completo
+                                </button>
+                                <button type="button" id="serviceBase2" onclick="selectBaseService(120, 'Lavado Completo + Tapizado')" class="p-3 rounded-xl border border-accentGray bg-darkBg text-gray-400 font-display text-xs tracking-widest uppercase transition-all duration-200">
+                                    Lavado + Tapizado
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- 3. Extras -->
+                        <div>
+                            <label class="block text-xs uppercase tracking-widest text-gray-400 mb-2 font-display">3. Añadir Extras</label>
+                            <div class="max-h-40 overflow-y-auto border border-accentGray/50 rounded-xl p-2 space-y-1 bg-darkBg">
+                                <label class="flex items-center gap-3 p-2 rounded hover:bg-cardBg/50 text-xs text-gray-300 cursor-pointer">
+                                    <input type="checkbox" data-extra-price="20" data-extra-name="Limpieza Exterior" onchange="calculateQuote()" class="accent-neonBlue">
+                                    <span>Limpieza solo exterior (+20€)</span>
+                                </label>
+                                <label class="flex items-center gap-3 p-2 rounded hover:bg-cardBg/50 text-xs text-gray-300 cursor-pointer">
+                                    <input type="checkbox" data-extra-price="20" data-extra-name="Limpieza Interior" onchange="calculateQuote()" class="accent-neonBlue">
+                                    <span>Limpieza solo interior (+20€)</span>
+                                </label>
+                                <label class="flex items-center gap-3 p-2 rounded hover:bg-cardBg/50 text-xs text-gray-300 cursor-pointer">
+                                    <input type="checkbox" data-extra-price="70" data-extra-name="Protección Cerámica" onchange="calculateQuote()" class="accent-neonBlue">
+                                    <span>Protección Cerámica (+70€)</span>
+                                </label>
+                                <label class="flex items-center gap-3 p-2 rounded hover:bg-cardBg/50 text-xs text-gray-300 cursor-pointer">
+                                    <input type="checkbox" data-extra-price="20" data-extra-name="Mantenimiento Cerámico" onchange="calculateQuote()" class="accent-neonBlue">
+                                    <span>Mantenimiento Cerámico (+20€)</span>
+                                </label>
+                                <label class="flex items-center gap-3 p-2 rounded hover:bg-cardBg/50 text-xs text-gray-300 cursor-pointer">
+                                    <input type="checkbox" data-extra-price="10" data-extra-name="Pelo de mascota" onchange="calculateQuote()" class="accent-neonBlue">
+                                    <span>Pelo de mascota (+10€)</span>
+                                </label>
+                                <label class="flex items-center gap-3 p-2 rounded hover:bg-cardBg/50 text-xs text-gray-300 cursor-pointer">
+                                    <input type="checkbox" data-extra-price="20" data-extra-name="Limpieza Llantas" onchange="calculateQuote()" class="accent-neonBlue">
+                                    <span>Limpieza de Llantas (+20€)</span>
+                                </label>
+                                <label class="flex items-center gap-3 p-2 rounded hover:bg-cardBg/50 text-xs text-gray-300 cursor-pointer">
+                                    <input type="checkbox" data-extra-price="10" data-extra-name="Desinfección Habitáculo" onchange="calculateQuote()" class="accent-neonBlue">
+                                    <span>Desinfección Habitáculo (+10€)</span>
+                                </label>
+                                <label class="flex items-center gap-3 p-2 rounded hover:bg-cardBg/50 text-xs text-gray-300 cursor-pointer">
+                                    <input type="checkbox" data-extra-price="40" data-extra-name="Hidratación de Piel" onchange="calculateQuote()" class="accent-neonBlue">
+                                    <span>Hidratación de Piel (+40€)</span>
+                                </label>
+                                <label class="flex items-center gap-3 p-2 rounded hover:bg-cardBg/50 text-xs text-gray-300 cursor-pointer">
+                                    <input type="checkbox" data-extra-price="10" data-extra-name="Recuperación Plásticos" onchange="calculateQuote()" class="accent-neonBlue">
+                                    <span>Recuperación de Plásticos (+10€)</span>
+                                </label>
+                                <label class="flex items-center gap-3 p-2 rounded hover:bg-cardBg/50 text-xs text-gray-300 cursor-pointer">
+                                    <input type="checkbox" data-extra-price="40" data-extra-name="Asiento Individual" onchange="calculateQuote()" class="accent-neonBlue">
+                                    <span>Asiento Individual (+40€)</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Panel de Resultados de Cotización -->
+                    <div class="bg-darkBg/60 p-6 rounded-xl border border-accentGray/60 flex flex-col justify-between">
+                        <div>
+                            <span class="text-xs uppercase tracking-widest text-gray-500 font-display">Resumen del servicio</span>
+                            <div class="mt-4 space-y-2">
+                                <div class="flex justify-between text-sm text-gray-300">
+                                    <span>Vehículo:</span>
+                                    <span id="summaryVehicle" class="font-semibold text-white capitalize">Turismo</span>
+                                </div>
+                                <div class="flex justify-between text-sm text-gray-300">
+                                    <span>Tratamiento base:</span>
+                                    <span id="summaryBase" class="font-semibold text-white">Lavado Completo</span>
+                                </div>
+                                <div class="flex justify-between text-sm text-gray-300">
+                                    <span>Extras seleccionados:</span>
+                                    <span id="summaryExtrasCount" class="font-semibold text-white">0</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Visualizador de Precio -->
+                        <div class="mt-8 pt-6 border-t border-accentGray/60">
+                            <div class="flex justify-between items-end">
+                                <div>
+                                    <p class="text-xs text-gray-400 uppercase tracking-widest">Total Estimado</p>
+                                    <p id="ivaSubtitle" class="text-[10px] text-gray-500 italic mt-0.5">(Precios sin IVA)</p>
+                                </div>
+                                <div class="text-right">
+                                    <span id="summaryPrice" class="text-4xl md:text-5xl font-display font-bold text-neonBlue neon-text-glow">30€</span>
+                                </div>
+                            </div>
+
+                            <!-- Botón Acción Directa WhatsApp -->
+                            <button onclick="sendWhatsAppBooking()" class="w-full mt-6 bg-gradient-to-r from-neonBlue to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-darkBg hover:text-white transition duration-300 font-display tracking-[0.15em] font-bold py-3.5 px-4 rounded-xl text-center uppercase flex items-center justify-center gap-2 shadow-[0_4px_20px_rgba(0,210,255,0.25)]">
+                                <i class="fa-brands fa-whatsapp text-lg"></i> Solicitar cita por WhatsApp
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 5: HORARIOS, UBICACIÓN Y CONTACTO -->
+        <section id="reservas" class="grid grid-cols-1 lg:grid-cols-12 gap-6 mb-14">
+            
+            <!-- Columna de Información (Horario + Contacto) - Ocupa 5 columnas de 12 -->
+            <div class="lg:col-span-5 flex flex-col gap-6">
+                <!-- Tarjeta de Horario (Desde flyer original) -->
+                <div class="bg-cardBg/40 border border-accentGray/80 rounded-2xl p-6 flex flex-col justify-between relative overflow-hidden flex-1">
+                    <div class="absolute -top-10 -right-10 w-32 h-32 bg-neonBlue/5 rounded-full blur-2xl"></div>
+                    
+                    <div>
+                        <div class="flex items-center gap-3 text-neonBlue mb-4">
+                            <i class="fa-regular fa-clock text-lg"></i>
+                            <h3 class="font-display tracking-[0.2em] uppercase text-white text-base">Horario de Verano</h3>
+                        </div>
+                        
+                        <div class="text-center py-4 border-y border-accentGray/40 my-2">
+                            <p class="text-[10px] text-gray-400 uppercase tracking-[0.3em] mb-1">Lunes a Viernes</p>
+                            <p class="font-display text-3xl md:text-4xl font-light tracking-widest text-white">
+                                07:30 <span class="text-neonBlue font-normal">—</span> 16:00
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="text-center mt-2">
+                        <p class="text-[10px] text-gray-500 uppercase tracking-widest leading-relaxed">
+                            Cuidamos cada detalle.<br>Brillas tú, destacas siempre.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Tarjeta de Contacto -->
+                <div class="bg-cardBg/40 border border-accentGray/80 rounded-2xl p-6 flex flex-col justify-between flex-1">
+                    <div>
+                        <div class="flex items-center gap-3 text-neonBlue mb-4">
+                            <i class="fa-solid fa-location-dot text-lg"></i>
+                            <h3 class="font-display tracking-[0.2em] uppercase text-white text-base">Contacto</h3>
+                        </div>
+
+                        <div class="space-y-3">
+                            <!-- Teléfono WhatsApp Directo -->
+                            <a href="https://wa.me/34637893301" target="_blank" class="flex items-center gap-4 p-2.5 rounded-xl hover:bg-neonBlue/10 border border-transparent hover:border-neonBlue/30 transition group">
+                                <div class="w-9 h-9 rounded-full bg-emerald-500/10 flex items-center justify-center text-emerald-400 shrink-0">
+                                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                                </div>
+                                <div>
+                                    <p class="text-[9px] text-gray-400 uppercase tracking-wider">Atención WhatsApp</p>
+                                    <p class="text-xs font-semibold text-white group-hover:text-neonBlue transition">637 893 301</p>
+                                </div>
+                            </a>
+
+                            <!-- Dirección física -->
+                            <a href="https://maps.google.com/?q=Av.+d'Alcodar+21,+46701,+Gandia" target="_blank" class="flex items-center gap-4 p-2.5 rounded-xl hover:bg-neonBlue/10 border border-transparent hover:border-neonBlue/30 transition group">
+                                <div class="w-9 h-9 rounded-full bg-neonBlue/10 flex items-center justify-center text-neonBlue shrink-0">
+                                    <i class="fa-solid fa-map-pin text-base"></i>
+                                </div>
+                                <div>
+                                    <p class="text-[9px] text-gray-400 uppercase tracking-wider">Dirección Física</p>
+                                    <p class="text-xs font-semibold text-white group-hover:text-neonBlue transition">Av. d'Alcodar 21, 46701, Gandia</p>
+                                </div>
+                            </a>
+
+                            <!-- Instagram -->
+                            <a href="https://instagram.com/eldiamante.detailing" target="_blank" class="flex items-center gap-4 p-2.5 rounded-xl hover:bg-neonBlue/10 border border-transparent hover:border-neonBlue/30 transition group">
+                                <div class="w-9 h-9 rounded-full bg-pink-500/10 flex items-center justify-center text-pink-400 shrink-0">
+                                    <i class="fa-brands fa-instagram text-lg"></i>
+                                </div>
+                                <div>
+                                    <p class="text-[9px] text-gray-400 uppercase tracking-wider">Síguenos en Instagram</p>
+                                    <p class="text-xs font-semibold text-white group-hover:text-neonBlue transition">@eldiamante.detailing</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Columna de Mapa Interactivo (Modo Oscuro Adaptativo) - Ocupa 7 columnas de 12 -->
+            <div class="lg:col-span-7 flex">
+                <div class="dark-map-container w-full min-h-[300px] lg:min-h-full flex">
+                    <iframe 
+                        class="dark-map-iframe w-full h-full min-h-[320px] border-0"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3106.136053703273!2d-0.1772658!3d38.9814143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd61e0555df90393%3A0xcad034b07fb31c9f!2sAv.%20d&#39;Alcodar%2C%2021%2C%2046701%20Gandia%2C%20Valencia!5e0!3m2!1ses!2ses!4v1700000000000!5m2!1ses!2ses" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- PILLS/BADGES DE VALORES PREMIUM -->
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-12">
+            <div class="p-4 rounded-xl border border-accentGray bg-cardBg/10 text-center flex flex-col items-center justify-center gap-2">
+                <i class="fa-solid fa-droplet text-neonBlue text-lg"></i>
+                <span class="text-[10px] font-display font-semibold uppercase tracking-widest text-white">Productos Premium</span>
+            </div>
+            <div class="p-4 rounded-xl border border-accentGray bg-cardBg/10 text-center flex flex-col items-center justify-center gap-2">
+                <i class="fa-solid fa-crown text-neonBlue text-lg"></i>
+                <span class="text-[10px] font-display font-semibold uppercase tracking-widest text-white">Acabados Profesionales</span>
+            </div>
+            <div class="p-4 rounded-xl border border-accentGray bg-cardBg/10 text-center flex flex-col items-center justify-center gap-2">
+                <i class="fa-solid fa-clock-rotate-left text-neonBlue text-lg"></i>
+                <span class="text-[10px] font-display font-semibold uppercase tracking-widest text-white">Puntualidad y Cuidado</span>
+            </div>
+            <div class="p-4 rounded-xl border border-accentGray bg-cardBg/10 text-center flex flex-col items-center justify-center gap-2">
+                <i class="fa-solid fa-wand-magic-sparkles text-neonBlue text-lg"></i>
+                <span class="text-[10px] font-display font-semibold uppercase tracking-widest text-white">Tu coche como nuevo</span>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <footer class="border-t border-accentGray/80 pt-8 pb-12 text-center relative">
+            <p class="font-display text-sm text-gray-400 tracking-[0.3em] uppercase mb-1">
+                Brillas tú, destacas siempre.
+            </p>
+            <p class="text-[10px] text-gray-600 tracking-wider uppercase mt-4">
+                © 2026 El Diamante Detailing. Todos los derechos reservados.
+            </p>
+        </footer>
+
+    </div>
+
+    <!-- LOGICA DE CONTROL DE LA APLICACIÓN -->
+    <script>
+        // Estado Global
+        let includeIva = false;
+        let selectedBasePrice = 30;
+        let selectedBaseName = "Lavado Completo";
+        
+        // Tabla de Precios para el Calculador Dinámico
+        const priceMatrix = {
+            turismo: { 'Lavado Completo': 30, 'Lavado Completo + Tapizado': 120 },
+            '4x4': { 'Lavado Completo': 35, 'Lavado Completo + Tapizado': 150 },
+            furgoneta_m: { 'Lavado Completo': 40, 'Lavado Completo + Tapizado': null }, 
+            furgoneta_g: { 'Lavado Completo': 45, 'Lavado Completo + Tapizado': null },
+            moto: { 'Lavado Completo': 12, 'Lavado Completo + Tapizado': null }
+        };
+
+        // Cambiar el estado del IVA
+        function toggleIva() {
+            includeIva = !includeIva;
+            const knob = document.getElementById('ivaKnob');
+            const toggle = document.getElementById('ivaToggle');
+            const subtitle = document.getElementById('ivaSubtitle');
+
+            if (includeIva) {
+                knob.classList.remove('translate-x-0');
+                knob.classList.add('translate-x-6');
+                toggle.classList.remove('bg-accentGray');
+                toggle.classList.add('bg-neonBlue');
+                subtitle.innerText = "(Precios con IVA incluido)";
+            } else {
+                knob.classList.remove('translate-x-6');
+                knob.classList.add('translate-x-0');
+                toggle.classList.remove('bg-neonBlue');
+                toggle.classList.add('bg-accentGray');
+                subtitle.innerText = "(Precios sin IVA)";
+            }
+
+            // Actualizar todos los precios del documento
+            updatePricesInUI();
+            calculateQuote();
+        }
+
+        // Formatea el precio según estado de IVA
+        function formatVal(basePrice) {
+            if (basePrice === null || isNaN(basePrice)) return "Consultar";
+            let val = basePrice;
+            if (includeIva) {
+                val = Math.round((basePrice * 1.21) * 100) / 100;
+                return val.toFixed(1) + "€";
+            }
+            return basePrice + "€";
+        }
+
+        // Actualiza dinámicamente todos los elementos que contengan la propiedad data-base-price
+        function updatePricesInUI() {
+            document.querySelectorAll('[data-base-price]').forEach(element => {
+                const base = parseFloat(element.getAttribute('data-base-price'));
+                element.innerText = formatVal(base);
+            });
+        }
+
+        // Selección de Servicio Base en el Cotizador
+        function selectBaseService(price, name) {
+            selectedBasePrice = price;
+            selectedBaseName = name;
+
+            const btn1 = document.getElementById('serviceBase1');
+            const btn2 = document.getElementById('serviceBase2');
+
+            if (name === 'Lavado Completo') {
+                btn1.classList.add('border-neonBlue', 'bg-neonBlue/10', 'text-white');
+                btn1.classList.remove('border-accentGray', 'bg-darkBg', 'text-gray-400');
+                btn2.classList.remove('border-neonBlue', 'bg-neonBlue/10', 'text-white');
+                btn2.classList.add('border-accentGray', 'bg-darkBg', 'text-gray-400');
+            } else {
+                btn2.classList.add('border-neonBlue', 'bg-neonBlue/10', 'text-white');
+                btn2.classList.remove('border-accentGray', 'bg-darkBg', 'text-gray-400');
+                btn1.classList.remove('border-neonBlue', 'bg-neonBlue/10', 'text-white');
+                btn1.classList.add('border-accentGray', 'bg-darkBg', 'text-gray-400');
+            }
+
+            calculateQuote();
+        }
+
+        // Calcular la cotización en base a selecciones de usuario
+        function calculateQuote() {
+            const vehicle = document.getElementById('calcVehicle').value;
+            const summaryVehicle = document.getElementById('summaryVehicle');
+            const summaryBase = document.getElementById('summaryBase');
+            const summaryExtrasCount = document.getElementById('summaryExtrasCount');
+            const summaryPrice = document.getElementById('summaryPrice');
+
+            // Determinar vehículo visible
+            const vehicleLabels = {
+                turismo: "Turismo",
+                '4x4': "4x4 / Monovolumen",
+                furgoneta_m: "Furgoneta Mediana",
+                furgoneta_g: "Furgoneta Grande",
+                moto: "Moto"
+            };
+
+            summaryVehicle.innerText = vehicleLabels[vehicle];
+            summaryBase.innerText = selectedBaseName;
+
+            // Obtener precio base según la matriz
+            let basePrice = priceMatrix[vehicle][selectedBaseName];
+            
+            if (basePrice === null) {
+                summaryPrice.innerText = "Consultar";
+                summaryExtrasCount.innerText = "0";
+                return;
+            }
+
+            // Sumar los extras marcados
+            let extrasTotal = 0;
+            let extrasCount = 0;
+            document.querySelectorAll('#configurador input[type="checkbox"]:checked').forEach(checkbox => {
+                extrasTotal += parseFloat(checkbox.getAttribute('data-extra-price'));
+                extrasCount++;
+            });
+
+            summaryExtrasCount.innerText = extrasCount;
+            
+            const grandTotal = basePrice + extrasTotal;
+            summaryPrice.innerText = formatVal(grandTotal);
+        }
+
+        // Lanzar redirección inteligente hacia WhatsApp con mensaje estructurado
+        function sendWhatsAppBooking() {
+            const vehicle = document.getElementById('calcVehicle').value;
+            const vehicleLabels = {
+                turismo: "Turismo",
+                '4x4': "4x4 / Monovolumen",
+                furgoneta_m: "Furgoneta Mediana",
+                furgoneta_g: "Furgoneta Grande",
+                moto: "Moto"
+            };
+
+            let extrasSelected = [];
+            document.querySelectorAll('#configurador input[type="checkbox"]:checked').forEach(checkbox => {
+                extrasSelected.push(checkbox.getAttribute('data-extra-name'));
+            });
+
+            const total = document.getElementById('summaryPrice').innerText;
+
+            let mensaje = `Hola El Diamante Detailing, me gustaría reservar una cita. %0A%0A`;
+            mensaje += `*Vehículo:* ${vehicleLabels[vehicle]}%0A`;
+            mensaje += `*Servicio:* ${selectedBaseName}%0A`;
+            
+            if (extrasSelected.length > 0) {
+                mensaje += `*Extras:* ${extrasSelected.join(', ')}%0A`;
+            }
+            
+            mensaje += `*Presupuesto aproximado:* ${total}%0A%0A`;
+            mensaje += `¿Qué fechas tenéis disponibles? ¡Gracias!`;
+
+            window.open(`https://wa.me/34637893301?text=${mensaje}`, '_blank');
+        }
+
+        // Inicialización
+        window.onload = function() {
+            calculateQuote();
+        }
+    </script>
+</body>
+</html>
